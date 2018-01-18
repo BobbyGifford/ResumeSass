@@ -1,0 +1,9 @@
+.heading-primary {
+    margin-bottom: 15px;
+    animation: inFromLeft 2s ease-out;
+
+    &--main {
+        display: block;
+        letter-spacing: .2rem;
+    }
+}

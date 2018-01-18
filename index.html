@@ -11,14 +11,47 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
-<body style="text-align: center; background-color: aliceblue">
-    <div class="container">
-        <h1 class="display-4">Robert Gifford</h1>
-        <img style="max-width: 200px" src="./images/profile_pic.jpg" />
+<body style="text-align: center; background-color: aliceblue" class="container">
+    <header class="header">
+        <div class="header__textarea">
+            <h1 class="heading-primary display-4">
+                <span class="heading-primary--main">Robert Gifford</span>
+            </h1>
+            <img class="header__textarea__mypic" style="max-width: 200px" src="./images/profile_pic.jpg" />
+        </div>
+
+    </header>
+
+    <div>
+        <div class="projects">
+            <h1 class="display-4">Project List</h1>
+            <p class="lead">
+                Below is a list of projects that are either completed or in progress:
+            </p>
+            <p>
+                * indicates app is on Heroku. It may take a few seconds to load.
+            </p>
+            <ul class="list-group my-4">
+                <a href="http://guitar-info.s3-website.us-east-2.amazonaws.com/" class="list-group-item">Guitar Info
+                    <span style="margin-left: 10px" class="badge badge-info">New</span>
+                </a>
+                <a href="https://arcane-sea-28401.herokuapp.com/" class="list-group-item">* OAuth verificaion and messages using MERN stack</a>
+                <a href="https://evening-headland-26956.herokuapp.com/" class="list-group-item">* Simple Quiz App with React
+                    <span style="margin-left: 10px" class="badge badge-success">In Progress</span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=oV0djyDJrE4&feature=youtu.be" class="list-group-item">(Video) Sport Predictions with Vue + Node</a>
+                <a href="http://vue2-sports-predictions.s3-website-us-west-1.amazonaws.com/" class="list-group-item">Sports Predictions with Vue + Firebase</a>
+                <a href="https://www.youtube.com/watch?v=q4Lv6k3VWY0" class="list-group-item">(Video) Android Workout App with Java</a>
+                <a href="https://www.youtube.com/watch?v=Zfu3aM_6I1E" class="list-group-item">(Video) Android Football Quiz with Java</a>
+                <a href="http://ng-rank-list-app.s3-website-us-west-1.amazonaws.com/driver" class="list-group-item">(Experiment) Angular List with Angular + Firebase</a>
+            </ul>
+        </div>
+
         <div class="contacts">
+            <h1 class="display-4">Contact</h1>
             <a href="https://github.com/BobbyGifford">
                 <img style="margin-left: 10px; max-width: 45px; margin: 3px" src="./images/GitHub-Mark-64px.png" />
             </a>
@@ -29,30 +62,6 @@
                 <img style="margin-left: 10px; max-width: 45px" src="./images/linkedin.png" />
             </a>
         </div>
-        <p class="lead"> I specialize in JavaScript on both the front and back-end, specifically using the MERN stack (Mongo, Express, React,
-            Node). I know other technologies as well, such as SQL, Python, and Java. I have many personal projects listed
-            on my GitHub. I am located in San Jose right next to Levi Stadum.
-        </p>
-        <p class="lead">
-            Below is a list of projects that are either completed or in progress:
-        </p>
-        <p>
-            * indicates app is on Heroku. It may take a few seconds to load.
-        </p>
-        <ul class="list-group my-4">
-            <a href="http://guitar-info.s3-website.us-east-2.amazonaws.com/" class="list-group-item">Guitar Info
-                <span style="margin-left: 10px" class="badge badge-info">New</span>
-            </a>
-            <a href="https://arcane-sea-28401.herokuapp.com/" class="list-group-item">* OAuth verificaion and messages using MERN stack</a>
-            <a href="https://evening-headland-26956.herokuapp.com/" class="list-group-item">* Simple Quiz App with React
-                <span style="margin-left: 10px" class="badge badge-success">In Progress</span>
-            </a>
-            <a href="https://www.youtube.com/watch?v=oV0djyDJrE4&feature=youtu.be" class="list-group-item">(Video) Sport Predictions with Vue + Node</a>
-            <a href="http://vue2-sports-predictions.s3-website-us-west-1.amazonaws.com/" class="list-group-item">Sports Predictions with Vue + Firebase</a>
-            <a href="https://www.youtube.com/watch?v=q4Lv6k3VWY0" class="list-group-item">(Video) Android Workout App with Java</a>
-            <a href="https://www.youtube.com/watch?v=Zfu3aM_6I1E" class="list-group-item">(Video) Android Football Quiz with Java</a>
-            <a href="http://ng-rank-list-app.s3-website-us-west-1.amazonaws.com/driver" class="list-group-item">(Experiment) Angular List with Angular + Firebase</a>
-        </ul>
     </div>
 
     <!-- Optional JavaScript -->
@@ -63,7 +72,6 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

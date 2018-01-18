@@ -1,0 +1,23 @@
+{
+  "name": "resumeupdatesass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "compile-sass": "node-sass sass/main.scss css/index.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BobbyGifford/BaseResume.git"
+  },
+  "author": "Bobby Gifford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BobbyGifford/BaseResume/issues"
+  },
+  "homepage": "https://github.com/BobbyGifford/BaseResume#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

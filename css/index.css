@@ -1,0 +1,56 @@
+.heading-primary {
+  margin-bottom: 15px;
+  animation: inFromLeft 2s ease-out; }
+  .heading-primary--main {
+    display: block;
+    letter-spacing: .2rem; }
+
+@keyframes inFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px); }
+  100% {
+    opacity: 100;
+    transform: translateY(0); } }
+
+a:hover {
+  text-decoration: none; }
+
+.header {
+  height: 70vh;
+  background-image: linear-gradient(to right bottom, rgba(116, 184, 207, 0.8), rgba(0, 0, 139, 0.8));
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 50% 100%, 0 45vh); }
+  .header__textarea {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .header__textarea__mypic {
+      animation: fadeIn 2s; }
+
+.projects {
+  background-color: aliceblue;
+  padding: 15rem 0 0 0;
+  margin-top: -20vh; }
+
+.contacts {
+  padding-top: 15rem;
+  padding-bottom: 50px;
+  height: 50vh;
+  background-image: linear-gradient(to right bottom, rgba(116, 184, 207, 0.8), rgba(0, 0, 139, 0.8));
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 50% 40%, 100% 0, 100% 100%, 0 100%); }

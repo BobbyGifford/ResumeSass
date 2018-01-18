@@ -1,0 +1,25 @@
+.header {
+  height: 70vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(116, 184, 207, 0.8),
+    rgba(0, 0, 139, 0.8)
+  );
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 50% 100%, 0 45vh);
+
+
+  &__textarea {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    &__mypic {
+      animation: fadeIn 2s;
+    }
+  }
+}
